@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Who am I?</title>
+    <style>
+    body {
+        background-color: #e1beff;
+        color: #334901;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+    }
+    .site_label {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 2rem;
+        color:#334901
+    }
+   .site_label::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #ff00aa;
+    margin-top: 4px;
+    transition: width 0.3s ease;
+}
+.site_label:hover {
+    color: #081fa5;
+    transform: scale(1.1);
+}
+.site_label:hover::after {
+    width: 105%;
+}
+     .site_label, h1{
+         background: linear-gradient(90deg, red, orange, rgb(240, 240, 56), green, blue, indigo, violet);
+         background-size: 200% auto;
+         -webkit-background-clip: text;
+         background-clip: text;
+         -webkit-text-fill-color: transparent;
+         color: transparent;
+         animation: rainbow-shift 4s linear infinite;
+       }
+
+        @keyframes rainbow-shift {
+            to{
+                background-position: 200% center;
+                }
+            }
+
+    .namecard {
+        background-color: #f5f5f5;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgb(255, 0, 221);
+        max-width: 800px;
+        max-height: 600px;
+        overflow-y: auto;
+        margin: auto;
+        text-align: center;
+        font-family: Times, "Times New Roman", serif;
+        transition: transform 0.2s ease;
+                }
+        .namecard:hover {
+            transform: scale(1.02);
+        }
+        .windows-bar {
+           background-color: #d8d8d8;
+           padding: 8px 12px;
+           display: flex;
+           gap: 6px;
+           margin: -20px -20px 16px -20px;
+           border-radius: 10px 10px 0 0;
+           border-bottom: 1px solid #c2c2c2;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .dot-red { background-color: #ff5f57; }
+        .dot-yellow { background-color: #febc2e; }
+        .dot-green { background-color: #28c840; }
+
+        h2, h3, h4 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 12px 0;
+            color: #bb005dfb;
+        }
+        p {
+            font-size: 1.6rem;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            color: #334901;
+        }
+
+    .social-links {
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+    .social-links a {
+        color: #334901;
+        text-decoration: none;
+        font-size: 1.5rem;
+        transition: color 0.2s ease;
+    }
+    .social-links a:hover {
+        color: #ff00dd;
+        transform: scale(1.2);
+    }
+    </style>
+</head>
+<body>
+
+    <div class="site_label">ALL ABOUT ME</div>
+
+     <div class= "namecard">
+        <div class="windows-bar">
+            <span class= "dot dot-red"></span>
+            <span class= "dot dot-yellow"></span>
+            <span class= "dot dot-green"></span>
+        </div>
+
+        <h1>Who am I?</h1>
+        <p> My name is Xam_meey!    </p>
+        <h2>How old am I?</h2>
+        <p> I am currently 18 years old</p>
+        <h3>What is my course?</h3>
+        <p> I am studying Computer Science in Iloilo Science and Technology University and im a 1st year student</p>
+        <h3>What are my hobbies?</h3>
+        <p> I have alot of hobbies, this includes reading, writing, and playing video games, photography, arts, music, and many more!</p>
+        <h4>More about me!</h4>
+        <p> I'm pretty much a detail-oriented person, just a 1st year this 2026. I'm interested in learning coding hence I chose computer science, plus it pays a lot as long as you have a job- uhm(Totally don't have a high unemployment rate). </p> 
+        <p>I'm also experienced in digital media and journalism especially in photojournalism. I love photography if and only if I have motivations. I also write some things and likes to story tell some random shits.</p>
+        <p>Currently my goal is to learn html and CSS cause I'm aiming to be a full-stack dev by the end of the school year. I'm committed in learning for the moneyyyy! Hell yeah!!! </p>
+
+    </div>
+
+    <div class="social-links">
+        <a href="https://www.facebook.com/sam.vanidestine" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/xam_meey/" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com/@xam_meey" target="_blank">YouTube</a>
+    </div>
+
+</body>
+</html>
+
+    
